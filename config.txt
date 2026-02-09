@@ -7,12 +7,41 @@ font-size = 16
 background-opacity = 0.5
 background-blur-radius = 10
 
-keybind = global:opt+space=toggle_visibility
+keybind = global:opt+space=toggle_quick_terminal
 
-#quick-terminal-position = top
-#quick-terminal-animation-duration = 0
-#quick-terminal-screen = main
-#quick-terminal-size = 100%
+# Zellij用に無効化
+keybind = super+bracket_left=unbind
+keybind = super+bracket_right=unbind
+keybind = super+t=unbind
+keybind = super+w=unbind
+keybind = super+d=unbind
+keybind = super+shift+d=unbind
+keybind = super+1=unbind
+keybind = super+2=unbind
+keybind = super+3=unbind
+keybind = super+4=unbind
+keybind = super+5=unbind
+keybind = super+6=unbind
+keybind = super+7=unbind
+keybind = super+8=unbind
+keybind = super+9=unbind
+keybind = super+digit_1=unbind
+keybind = super+digit_2=unbind
+keybind = super+digit_3=unbind
+keybind = super+digit_4=unbind
+keybind = super+digit_5=unbind
+keybind = super+digit_6=unbind
+keybind = super+digit_7=unbind
+keybind = super+digit_8=unbind
+keybind = super+digit_9=unbind
+
+# Zellij用にoptをaltとして扱う
+macos-option-as-alt = true
+
+quick-terminal-position = top
+quick-terminal-animation-duration = 0.2
+quick-terminal-screen = main
+quick-terminal-size = 100%
 
 working-directory = ~/Workspace
 window-inherit-working-directory = true
@@ -23,4 +52,6 @@ theme = Nord Wave
 cursor-style = bar
 
 split-divider-color = #555555
-
+window-padding-x = 8
+window-padding-y = 8
+macos-titlebar-style = hidden
